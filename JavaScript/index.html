@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kaique Prado</h1>
+    </header>
+
+    <section>
+        <h1>Calculadora</h1>
+        <div class="calculadora">
+            <div class="visor">
+                <span class="display" id="display"></span>
+            </div>
+
+            <table class="tabela">
+                <tbody>
+                    <tr>
+                        <td><button id="parentesesEsq" onclick='insert("(")'>(</button></td>
+                        <td><button id="parentesesDir" onclick="insert(')')">)</button></td>
+                        <td><button id="Resto" onclick="insert('%')">%</button></td>
+                        <td><button id="limpar" onclick="back()">CE</button></td>
+                        <td><button onclick="limpar()">limpar</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" onclick="insert('7')">7</button></td>
+                        <td><button id="8" onclick="insert('8')">8</button></td>
+                        <td><button id="9" onclick="insert('9')">9</button></td>
+                        <td><button id="divisao" onclick="insert('/')">÷</button></td>
+                    </tr>
+                    <tr>
+                        <td id="4"><button id="4" onclick="insert('4')">4</button></td>
+                        <td id="5"><button id="5" onclick="insert('5')">5</button></td>
+                        <td id="6"><button id="6" onclick="insert('6')">6</button></td>
+                        <td id="vezes"><button id="x" onclick="insert('*')">×</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1" onclick="insert('1')">1</button></td>
+                        <td><button id="2" onclick="insert('2')">2</button></td>
+                        <td><button id="3" onclick="insert('3')">3</button></td>
+                        <td><button id="menos" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <button class="zero" id="0" onclick="insert('0')">0</button></td>
+                        <td><button id="ponto" onclick="insert('.')">.</button></td>
+                        <td><button id="mais" onclick="insert('+')">+</button></td>
+                        <td><button id="igual" class="igual" onclick="calculo()">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
